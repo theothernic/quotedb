@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\QuoteController::class, 'random']);
+Route::get('quote/{id}.html', [\App\Http\Controllers\QuoteController::class, 'single']);
