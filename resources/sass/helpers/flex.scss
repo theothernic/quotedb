@@ -1,0 +1,37 @@
+.flex {
+    display: flex;
+
+    &.row {
+        flex-direction: row;
+        &.rev {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &.col {
+        flex-direction: column;
+
+        &.rev {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .one { flex: 1; }
+    .two { flex: 2; }
+    .three { flex: 3; }
+    .four { flex: 4; }
+    .five { flex: 5; }
+
+
+    .jc-e { justify-content: end; }
+    .jc-c { justify-content: center; }
+    .jc-s { justify-content: start; }
+
+    .ac-e { align-content: end; }
+    .ac-c { align-content: center; }
+    .ac-s { align-content: start; }
+
+    .ai-e { align-items: end; }
+    .ai-c { align-items: center; }
+    .ai-s { align-items: start; }
+}

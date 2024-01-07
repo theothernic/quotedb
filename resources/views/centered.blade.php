@@ -7,15 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
 
-    <style>
-
-    </style>
+    @vite(['resources/js/centered.js'])
 </head>
 <body>
 
-    <main>
+    <main class="content centered">
         @yield('content')
     </main>
+
+    <footer class="colophon">
+        <div class="ct flex row">
+            <section class="brand">
+                {{ config('app.name') }}
+            </section>
+
+            <section>
+
+            </section>
+        </div>
+    </footer>
 
 </body>
 </html>

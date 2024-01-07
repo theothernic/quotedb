@@ -1,0 +1,66 @@
+@import url('../css/resets.css');
+
+@import 'helpers/flex.scss';
+@import 'fonts/google.scss';
+
+
+body {
+    background: #eaeaea;
+    color: #676767;
+}
+
+
+main.content {
+    display: flex;
+
+
+    &.centered {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .quote {
+        width: 100%;
+        margin: 1rem;
+        padding: 0.6rem;
+        background: white;
+
+        box-shadow: 0.2rem 0.2rem #ccc;
+
+
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 300;
+
+        .body {
+            text-align: center;
+        }
+
+        footer {
+            padding-right: 1rem;
+            font-family: 'Georgia', serif;
+            font-size: 0.9rem;
+            font-style: italic;
+
+            text-align: right;
+        }
+    }
+}
+
+
+.ct {
+    margin: 0 auto;
+    width: 50vw;
+    max-width: 50vw;
+}
+
+footer.colophon {
+    .brand {
+        font-family: 'Georgia', serif;
+        font-size: 1.4rem;
+        font-weight: 100;
+        font-style: italic;
+        color: #999;
+    }
+}

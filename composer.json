@@ -4,12 +4,19 @@
     "description": "Quote database built on the Laravel framework.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/bearlovescode/datamodels.git"
+        }
+    ],
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
-        "laravel/tinker": "^2.8"
+        "laravel/tinker": "^2.8",
+        "bearlovescode/datamodels": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
